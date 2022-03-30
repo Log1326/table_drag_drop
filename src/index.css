@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+._body {
+    font-family: 'Rubik';
+    font-size: 14px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+._headerTable {
+    display: flex;
+    width: 15%;
+}
+
+._tableRow {
+    display: flex;
+    justify-content: center;
+}
+
+.table_cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 2rem;
+    background: #F6F6F6;
+    margin: 2px;
+    padding: 3px;
+}
+
+.table_cell.header {
+    background: #FFF;
+}
+
+.standardWidth{
+    width: 14%;
+}
+
+.wideWidth{
+    width: 20%;
+}
+
+.smallWidth{
+    width: 10%;
+}
+
+.smallWidth2{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 940px) {
+    .table_cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        background: #F6F6F6;
+        margin: 2px;
+        padding: 3px;
+    }
+
+    ._body {
+        font-family: 'Rubik';
+        font-size: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 540px) {
+
+    ._body {
+        font-family: 'Rubik';
+        font-size: 7px;
+    }
+
+
 }
